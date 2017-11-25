@@ -1,0 +1,35 @@
+{
+  "behaviors": {
+    "SpaceguyBehavior": {
+      "scriptId": "9",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "walkingSpeed",
+          "type": "number"
+        },
+        {
+          "name": "climbingSpeed",
+          "type": "number"
+        },
+        {
+          "name": "jumpForce",
+          "type": "number"
+        },
+        {
+          "name": "maxJumpPressingTime",
+          "type": "number"
+        },
+        {
+          "name": "jumpPressingTime",
+          "type": "number"
+        },
+        {
+          "name": "jumping",
+          "type": "boolean"
+        }
+      ]
+    }
+  }
+}

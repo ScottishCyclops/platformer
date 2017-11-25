@@ -1,0 +1,58 @@
+{
+  "formatVersion": 3,
+  "maps": [
+    "map"
+  ],
+  "filtering": "pixelated",
+  "wrapping": "clampToEdge",
+  "pixelsPerUnit": 100,
+  "framesPerSecond": 5,
+  "opacity": null,
+  "alphaTest": 0.1,
+  "frameOrder": "rows",
+  "grid": {
+    "width": 16,
+    "height": 30
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 0.5
+  },
+  "animations": [
+    {
+      "id": "0",
+      "name": "Jump",
+      "startFrameIndex": 0,
+      "endFrameIndex": 1,
+      "speed": 1
+    },
+    {
+      "id": "1",
+      "name": "Land",
+      "startFrameIndex": 2,
+      "endFrameIndex": 3,
+      "speed": 0.5
+    },
+    {
+      "id": "2",
+      "name": "Still",
+      "startFrameIndex": 4,
+      "endFrameIndex": 5,
+      "speed": 0.2
+    },
+    {
+      "id": "3",
+      "name": "Walk",
+      "startFrameIndex": 6,
+      "endFrameIndex": 7,
+      "speed": 1.1
+    }
+  ],
+  "mapSlots": {
+    "map": "map",
+    "light": null,
+    "specular": null,
+    "alpha": null,
+    "normal": null
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "nextEntryId": 10,
+  "nodes": [
+    {
+      "id": "0",
+      "name": "SC_Main",
+      "type": "scene"
+    },
+    {
+      "id": "1",
+      "name": "SP_Spaceguy",
+      "type": "sprite"
+    },
+    {
+      "id": "3",
+      "name": "TS_Gound",
+      "type": "tileSet"
+    },
+    {
+      "id": "5",
+      "name": "TM_Level1Ground",
+      "type": "tileMap"
+    },
+    {
+      "id": "9",
+      "name": "JS_Spaceguy",
+      "type": "script"
+    }
+  ]
+}
