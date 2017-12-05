@@ -6,7 +6,7 @@
   },
   "tileProperties": {
     "3_2": {
-      "ladder": ""
+      "ladder": "true"
     }
   }
 }

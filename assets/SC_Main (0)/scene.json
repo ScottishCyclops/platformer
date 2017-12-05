@@ -3,11 +3,11 @@
   "nodes": [
     {
       "id": "0",
-      "name": "SP_Spaceguy",
+      "name": "A_Spaceguy",
       "children": [
         {
           "id": "4",
-          "name": "Camera",
+          "name": "A_Camera",
           "children": [],
           "components": [
             {
@@ -28,12 +28,34 @@
                 "farClippingPlane": 1000
               },
               "id": "0"
+            },
+            {
+              "type": "ArcadeBody2D",
+              "config": {
+                "formatVersion": 2,
+                "type": "box",
+                "movable": true,
+                "width": 0.2,
+                "height": 0.3,
+                "offset": {
+                  "x": 0,
+                  "y": 0
+                },
+                "bounce": {
+                  "x": 0,
+                  "y": 0
+                },
+                "tileMapAssetId": null,
+                "tileSetPropertyName": null,
+                "layersIndex": null
+              },
+              "id": "1"
             }
           ],
           "position": {
             "x": 0,
             "y": 0,
-            "z": 0.3706028461456299
+            "z": 1
           },
           "orientation": {
             "x": 0,
@@ -57,7 +79,7 @@
           "config": {
             "formatVersion": 1,
             "spriteAssetId": "1",
-            "animationId": null,
+            "animationId": "3",
             "horizontalFlip": false,
             "verticalFlip": false,
             "castShadow": false,
@@ -80,9 +102,9 @@
         }
       ],
       "position": {
-        "x": 0.4176150858402252,
-        "y": 2.168376922607422,
-        "z": -4.103848934173584
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
       "orientation": {
         "x": 0,
@@ -101,7 +123,7 @@
     },
     {
       "id": "1",
-      "name": "TM_Level1Ground",
+      "name": "A_Ground",
       "children": [],
       "components": [
         {
@@ -116,12 +138,34 @@
             "shaderAssetId": null
           },
           "id": "0"
+        },
+        {
+          "type": "ArcadeBody2D",
+          "config": {
+            "formatVersion": 2,
+            "type": "tileMap",
+            "movable": true,
+            "width": 1,
+            "height": 1,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "bounce": {
+              "x": 0,
+              "y": 0
+            },
+            "tileMapAssetId": "5",
+            "tileSetPropertyName": null,
+            "layersIndex": "0"
+          },
+          "id": "1"
         }
       ],
       "position": {
         "x": 0,
-        "y": 0,
-        "z": -5
+        "y": -2.1460318565368652,
+        "z": -0.5
       },
       "orientation": {
         "x": 0,
@@ -133,6 +177,82 @@
         "x": 1,
         "y": 1,
         "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "5",
+      "name": "A_Fire",
+      "children": [],
+      "components": [
+        {
+          "type": "SpriteRenderer",
+          "config": {
+            "formatVersion": 1,
+            "spriteAssetId": "10",
+            "animationId": "0",
+            "horizontalFlip": false,
+            "verticalFlip": false,
+            "castShadow": false,
+            "receiveShadow": false,
+            "color": "ffffff",
+            "overrideOpacity": false,
+            "opacity": null,
+            "materialType": "basic",
+            "shaderAssetId": null
+          },
+          "id": "0"
+        },
+        {
+          "type": "Light",
+          "config": {
+            "formatVersion": 2,
+            "type": "ambient",
+            "color": "ffffff",
+            "intensity": 1,
+            "distance": 0,
+            "angle": 60,
+            "target": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "castShadow": false,
+            "shadowMapSize": {
+              "width": 512,
+              "height": 512
+            },
+            "shadowBias": 0,
+            "shadowCameraNearPlane": 0.1,
+            "shadowCameraFarPlane": 1000,
+            "shadowCameraFov": 50,
+            "shadowCameraSize": {
+              "top": 100,
+              "bottom": -100,
+              "left": -100,
+              "right": 100
+            }
+          },
+          "id": "1"
+        }
+      ],
+      "position": {
+        "x": 1.129995584487915,
+        "y": -0.10552725940942764,
+        "z": 0.5
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 0.3,
+        "y": 0.3,
+        "z": 0.3
       },
       "visible": true,
       "layer": 0,

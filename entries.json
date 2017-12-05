@@ -1,5 +1,5 @@
 {
-  "nextEntryId": 10,
+  "nextEntryId": 12,
   "nodes": [
     {
       "id": "0",
@@ -9,6 +9,11 @@
     {
       "id": "1",
       "name": "SP_Spaceguy",
+      "type": "sprite"
+    },
+    {
+      "id": "10",
+      "name": "SP_Fire",
       "type": "sprite"
     },
     {
@@ -23,7 +28,12 @@
     },
     {
       "id": "9",
-      "name": "JS_Spaceguy",
+      "name": "TS_Spaceguy",
+      "type": "script"
+    },
+    {
+      "id": "11",
+      "name": "TS_Main",
       "type": "script"
     }
   ]
